@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- links -->
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="./libs/css-libs/all.min.css">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="./libs/css-libs/bootstrap.min.css">
+
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Cairo:wght@500&family=Changa:wght@700&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+<header class="container-fluid shadow">
+    <div class="container-sm py-3 py-md-4 py-lg-4 d-flex justify-content-between">
+        <div class="d-flex align-items-center flex-grow-1">
+            <div>
+                <img src="./imgs/logo.png" alt=""> 
+            </div>
+            <div class="mx-3 flex-grow-1">
+                <h2>Your climate</h2>
+            </div>
+        </div>
+        <div class="desc d-sm-flex align-items-center justify-content-end d-none">
+            <p class="w-75">
+                This site provides you with the weather around the world at any time
+            </p>
+        </div>
+    </div>
+</header>
+
+<section class="content container-fluid">
+    <div class="container-sm">
+        <div class="search-field d-flex mb-5">
+            <div class="d-flex flex-fill parent">
+                <button class="" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text"
+                class="flex-grow-1 px-2" 
+                placeholder="Search about location"
+                name="q"
+                >
+            </div>
+        </div>
+        <div class="container-fluid pt-5">
+            <div class="row align-items-stretch" id="bodyData">
+                <div class="col-md-4 parent" id="mainPackage">
+                    <div class="package-data d-flex justify-content-center p-3 flex-wrap align-items-start">
+                        <div class="day">
+                            <small id="currentDay">sunday</small>
+                        </div>
+                        <div class="location w-100">
+                            <h2 class="text-center">Cairo</h2>
+                        </div>
+                        <div class="body d-flex w-100 align-items-center w-100 justify-content-evenly">
+                            <span>18 'C</span>
+                            <img src='./icons/animated/cloudy.svg' alt='' id="statusImg">
+                        </div>
+                        <div class="status w-100 text-center">
+                            <small id="status">Partly cloudy</small>
+                        </div>
+                        <div class="icons d-flex justify-content-evenly w-100 mt-2">
+                            <div>
+                                <i class="fa-solid fa-wind"></i>
+                                <span id="windSpeed">18km/h</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-umbrella"></i>
+                                <span>20%</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-compass"></i>
+                                <span>East</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 parent" id="secondPackage">
+                    <div class="package-data d-flex justify-content-center p-3 flex-wrap align-items-start">
+                        <div class="day">
+                            <small id="currentDayAgain">sunday</small>
+                        </div>
+                        <div class="body d-flex w-100 align-items-center w-100 justify-content-evenly flex-wrap">
+                            <span class="w-100 text-center">18 'C</span>
+                            <img src='./icons/animated/rainy-7.svg' class="w-100" alt='' id="statusImg2">
+                        </div>
+                        <div class="status w-100 text-center">
+                            <small id="status2">Partly cloudy</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 parent" id="thirdPackage">
+                    <div class="package-data d-flex justify-content-center p-3 flex-wrap align-items-start">
+                        <div class="day">
+                            <small id="currentDayPlusOne">Monday</small>
+                        </div>
+                        <div class="body d-flex w-100 align-items-center w-100 justify-content-evenly flex-wrap">
+                            <span class="w-100 text-center">18 'C</span>
+                            <img src='./icons/animated/rainy-7.svg' class="w-100" alt='' id="statusImg3">
+                        </div>
+                        <div class="status w-100 text-center">
+                            <small id="status3">Partly cloudy</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcome py-5">
+<div class="container-fluid py-5">
+    <div class="container-sm">
+        <div>
+            <h1 class="text-center">Welcome To Your Climate Web Site</h1>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ============Scripts============= -->
+
+
+    <!-- Bootstrap JS -->
+<script src="./libs/js-libs/bootstrap.bundle.min.js"></script>
+
+    <!-- MY JS -->
+<script src="./js/main.js"></script>
+
+
+<!-- ==========End Scripts===========  -->
+</body>
+</html>
